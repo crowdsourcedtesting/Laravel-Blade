@@ -181,12 +181,18 @@ class Blade {
 
 		return $env;
 	}
-
+	
+	/**
+	 * @return BladeCompiler
+	 */
 	public function getCompiler()
 	{
 		return $this->container['blade.compiler'];
 	}
 	
+	/**
+	 * @return ViewFinderInterface
+	 */
 	public function getViewFinder()
 	{
 		return $this->container['view.finder'];
