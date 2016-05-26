@@ -186,4 +186,9 @@ class Blade {
 	{
 		return $this->container['blade.compiler'];
 	}
+	
+	public function getViewFinder()
+	{
+		return $this->container['view.finder'];
+	}
 }
